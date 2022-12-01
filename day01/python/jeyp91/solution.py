@@ -1,8 +1,8 @@
 def get_input():
-    with open("input.txt",'r') as input_file:
-        input = input_file.read()
+    with open("input.txt", 'r') as input_file:
+        input_string = input_file.read()
     # print(input)
-    return input
+    return input_string
 
 
 def get_elves_calories():
@@ -18,15 +18,16 @@ def get_elves_calories():
 
     return elves_calories
 
-def main():
 
+def main():
     elves_calories = get_elves_calories()
 
-    #star 1
+    # star 1
     print("Solution day 1, part 1: ", max(elves_calories))
-    
-    #star 2
+
+    # star 2
     elves_calories.sort(reverse=True)
     print("Solution day 1, part 2: ", sum(elves_calories[0:3]))
+
 
 main()
