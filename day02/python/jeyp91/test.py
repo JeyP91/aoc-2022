@@ -22,9 +22,10 @@ def test():
 
     assert get_points_total_part_1(matches) == 15
 
-    assert transform_match(matches[0]) == "A X"
-    assert transform_match(matches[1]) == "B X"
-    assert transform_match(matches[2]) == "C X"
+    assert transform_match(matches[0]) == "A X"  # A Y
+    assert transform_match(matches[1]) == "B X"  # B X
+    assert transform_match(matches[2]) == "C X"  # C Z
+    assert transform_match("A X") == "A Z"
 
     assert get_points_total_part_2(matches) == 12
 
