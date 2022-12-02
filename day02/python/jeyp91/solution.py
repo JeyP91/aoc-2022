@@ -80,10 +80,10 @@ def main():
     matches = input_string.split("\n")
 
     # star 1
-    print("Solution day 1, part 1: ", get_points_total_part_1(matches))
+    print("Solution day 2, part 1: ", get_points_total_part_1(matches))
 
     # star 2
-    print("Solution day 1, part 2: ", get_points_total_part_2(matches))
+    print("Solution day 2, part 2: ", get_points_total_part_2(matches))
 
 
 main()
