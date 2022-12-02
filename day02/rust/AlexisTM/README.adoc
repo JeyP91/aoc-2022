@@ -1,0 +1,9 @@
+== Day 02: Rock Paper Scissors ==
+
+You can start it with (within the folder with input.txt)
+
+```rust
+cargo run --release
+```
+
+Solved with a hashmap of the input => answer
