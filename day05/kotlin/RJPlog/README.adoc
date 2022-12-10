@@ -1,0 +1,31 @@
+==  Day 5: Supply Stacks  ==
+
+This solution is written in Kotlin.
+
+The original puzzle can be found at https://adventofcode.com/2022/day/5
+
+
+=== First Star
+
+How does it work: +
+
+The input file is processed by writing the single stacks in a list of lists. After that is done, the crane instructions are parsed and the crates are copied and deleted from the stack where they were taken from and then added to the stack which are they supposed to be delivered. The function _SuSaN_ does this dependent on the input value for part one or part two
+[source, kotlin, numbered]
+....
+include::day2205_1_2.kt[tags=SupplyStack]
+....
+
+
+=== Second Star
+
+How does it work: +
+
+Part two takes the same function _SuSa_ as part one, only difference is that adding the crates to the stack will be in different order.
+
+
+At the end, both solutions are printed out. 
+[source, kotlin, numbered]
+....
+include::day2205_1_2.kt[tags=output]
+....
+

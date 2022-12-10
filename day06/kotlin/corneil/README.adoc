@@ -1,0 +1,22 @@
+== Tuning Trouble
+
+Today was probably the easiest one so far from my perspective. We had to write a simple parser to find the first unique sequence of characters with a given length and report the number of characters read.
+
+The Kotlin collections method `windowed` provides a way to create a window over an `Iterable` and provides a simple way to solve this. Checking that the content of the window as a unique set is the same size as the window.
+
+=== Solution
+[source,kotlin]
+....
+fun findUniquePacketEnd(input: String, packetSize: Int): Int {
+  return input.toList()
+    .windowed(packetSize)
+    .indexOfFirst { it.toSet().size == packetSize } + packetSize
+}
+....
+
+=== Full source
+
+[source,kotlin]
+....
+include::src/solution.kt[]
+....
